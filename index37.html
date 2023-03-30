@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    .container{
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+    }
+    .container form{
+        padding: 50px;
+        border-radius: 2px;
+        border: 1px solid black;
+       }
+.input-group{
+    margin-bottom: 10px;
+    display: flex;
+}
+input , textarea{
+    flex: 6;
+    }
+    label {
+        line-height: 2;
+        flex: 2;
+    }
+    textarea{
+        height: 60px;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <form>
+            <div class="input-group">
+                <label for="titel">Post title :</label>
+                <input type="text" name="titel" id="titel" value="My latest trip to bulgaria">
+            </div>
+
+            <div class="input-group">
+                <label for="content">Post Content: </label>
+                <textarea name="content" id="content" cols="60" rows="5">Hope You enjoy it!</textarea>
+            </div>
+
+            <div class="input-group">
+
+                <button type="submit">Update Post</button>
+            </div>
+            <input type="hidden" id="postId" name="PostId" value="23678">
+        </form>
+
+
+    </div>
+</body>
+
+</html>
